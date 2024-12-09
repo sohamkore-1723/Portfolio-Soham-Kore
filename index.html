@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <l><img src="images/final Logo.png" class="logo"></l>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Student Designer</p>
+            <h1>Hi, I'm <span>Soham Kore</span><br>From Atlas ISDI.</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user-01.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="aboutpara">As a second-year student at Atlas SkillTech University, I am deeply immersed in the world of communication design, where I aspire to blend creativity with strategic thinking. My journey as an aspiring designer has been fueled by a passion for graphics and branding, allowing me to explore the nuances of visual storytelling. Proficient in tools like Photoshop, Illustrator, InDesign, and Procreate, I continuously refine my skills to create compelling designs that resonate with audiences.
+                    <br><br> I pride myself on my strong communication and management skills, which enable me to collaborate effectively with diverse teams and clients. I believe that great design is not just about aesthetics; it’s about understanding the message and delivering it in a way that captivates and engages. I am excited to share my portfolio with you, showcasing the projects that reflect my dedication and vision as a designer. Join me on this creative journey as I strive to make an impact through design.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Illustration</span><br><underneath> Creating custom illustrations for various media.</underneath></li>
+                        <li><span>Book Design</span><br><underneath> Designing layouts for books and publications.</underneath></li>
+                        <li><span>UI/UX</span><br><underneath>Designing web and app interfaces.</underneath></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br><underneath>Communication Design Training at Atlas ISDI Mumbai.</underneath></li>
+                        <li><span>2022 - 2023</span><br><underneath>Intership at Elink Software Technologies.</underneath></li>
+                       
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - Current</span><br><underneath>Studying Bachelors Communication Design at ISDI, Atlas University, Mumbai.</underneath></li>
+                        <li><span>2019 - 2023</span><br><underneath>PSMB Student at R.N Podar International, Mumbai</underneath></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"><c>My Services</c></h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Illustartion</h2>
+                <p>I offer custom illustration services that bring ideas to life through captivating visuals. Utilizing software like <b>Procreate</b>, <b>Adobe Illustrator</b>, and <b>Photoshop</b>, I create everything from detailed illustrations for books to engaging graphics for marketing materials.
+                    <br><br> My approach focuses on understanding your vision, ensuring that each illustration not only meets your needs but also resonates with your audience.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>I provide comprehensive UI/UX design services aimed at creating intuitive and user-friendly interfaces for websites and applications. Leveraging tools like <b>Visual Studio Code</b> and <b>Figma</b>, I focus on enhancing user experience through thoughtful design elements and seamless navigation. 
+                    <br><br>My goal is to ensure that users find your digital products not only functional but also enjoyable to use.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Book Design</h2>
+                <p>With a keen eye for layout and typography, I specialize in book design that enhances the reading experience. Using <b>Adobe InDesign</b> and <b>Photoshop</b>, I craft visually appealing book layouts that effectively convey the essence of the content.
+                    <br><br> Whether it’s a children’s book or a professional publication, my designs aim to captivate readers and elevate the overall presentation.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/kitschbook-01.png">
+                <div class="layer">
+                    <h3>Glossary Design</h3>
+                    <p>A Complete A-Z Glossary on the art movement "Kitsch".</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2-01.png">
+                <div class="layer">
+                    <h3>Food Brochure</h3>
+                    <p>A Mexican Food and Beverage Brochure for Mexican Cuisine Loctions in Mumbai.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3-01.png">
+                <div class="layer">
+                    <h3>Children's Cookbook</h3>
+                    <p>A Cookie themed cookbbok made from scratch and aimed at young children.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+            </div>
+    <div class="container">
+       
+        <div class="work-list">
+            <div class="work">
+                <img src="images/card.png">
+                <div class="layer">
+                    <h3>Card Design</h3>
+                    <p>A Queen Card designed for a Baroque X Gore Inspired deck of playing cards,</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/storyboard.png">
+                <div class="layer">
+                    <h3>Storyboard</h3>
+                    <p>An Illustrated storyboard for a "Junji ito" inspired horror narrative.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/VB.png">
+                <div class="layer">
+                    <h3>Visual Branding</h3>
+                    <p>A campaign design, for an imaginary stationary brand - including brand identity, collaterals and mockups.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>soham.kore.bdes2027@atlasskilltech.univeristy</p>
+                <p><i class="fas fa-phone-square-alt"></i>9324198254</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="Madebyline">
+        <p>Made by Soahm Kore<i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
